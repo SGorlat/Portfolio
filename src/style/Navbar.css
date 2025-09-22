@@ -1,0 +1,48 @@
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px 24px;
+}
+
+.me-content ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.me-content a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 10px;
+}
+
+.me-content a:hover {
+  text-decoration: underline;
+}
+
+.cv-content {
+  display: flex;
+  gap: 20px;
+}
+
+.online-cv {
+  text-decoration: none;
+  color: white;
+  align-self: center;
+}
+
+.download-cv {
+  width: 130px;
+  height: 30px;
+  border-radius: 4%;
+  background-color: rgb(103, 207, 236);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: beige;
+}

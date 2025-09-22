@@ -1,0 +1,43 @@
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.avatar {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  padding: 2px;
+  border: 5px solid rgb(103, 207, 236);
+  object-fit: cover;
+}
+
+.description {
+  margin-bottom: 80px;
+  width: 1050px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: #548dd8;
+}
+
+.description p {
+  font-size: 20px;
+  max-width: 950px;
+}
