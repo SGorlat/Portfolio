@@ -26,7 +26,7 @@ function Navbar() {
       <section className="cv-content">
         <a
           className="online-cv"
-          href="/CV/Salvador_Ortega_CV_2025.pdf"
+          href="/CV/SALVADOR_ORTEGA_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -35,8 +35,8 @@ function Navbar() {
 
         <a
           className="download-cv"
-          href="/CV/Salvador_Ortega_CV_2025.pdf"
-          download="Salvador_Ortega_CV_2025.pdf"
+          href="/CV/SALVADOR_ORTEGA_CV.pdf"
+          download="SALVADOR_ORTEGA_CV.pdf"
         >
           Descargar CV
         </a>

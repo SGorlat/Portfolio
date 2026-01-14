@@ -1,6 +1,6 @@
 .navbar-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   padding: 16px 24px;
@@ -16,6 +16,7 @@
   text-decoration: none;
   color: white;
   padding: 6px 10px;
+  font-size: 1.5rem;
 }
 
 .me-content a:hover {
@@ -25,6 +26,7 @@
 .cv-content {
   display: flex;
   gap: 20px;
+  font-size: 1.2rem;
 }
 
 .online-cv {
