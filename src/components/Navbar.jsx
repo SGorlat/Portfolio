@@ -4,22 +4,23 @@ import "../style/Navbar.css";
 function Navbar() {
   return (
     <div className="navbar-content">
+      <h1 className="name">SGorlat</h1>
       <section className="me-content">
         <ul>
           <li>
-            <a href="#Sobre mi">Sobre mi</a>
+            <a href="#about">Sobre mi</a>
           </li>
           <li>
-            <a href="#Skills">Skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#Certificados">Certificados</a>
+            <a href="#certificates">Certificados</a>
           </li>
           <li>
-            <a href="#Proyestos">Proyectos</a>
+            <a href="#projects">Proyectos</a>
           </li>
           <li>
-            <a href="#Contactame">Contactame</a>
+            <a href="#contact">Contactame</a>
           </li>
         </ul>
       </section>

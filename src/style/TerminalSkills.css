@@ -1,0 +1,96 @@
+.terminal_container {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #2b2828;
+  margin: 15px 0;
+  font-family: "Courier New", monospace;
+}
+
+.terminal_header {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #2b2828;
+  gap: 6px;
+}
+
+.terminal_dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.t_red {
+  background: #e06363;
+}
+.t_yellow {
+  background: #e0e006;
+}
+.t_green {
+  background: #07b507;
+  margin-right: 10px;
+}
+
+.terminal_title {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.terminal_body {
+  background-color: #0d1117;
+  padding: 16px;
+  min-height: 120px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.terminal_line {
+  margin: 0;
+  padding: 2px 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.t_command {
+  color: #7fffd4;
+}
+
+.t_output {
+  color: #e3965a;
+  padding-left: 14px;
+}
+
+.t_output::before {
+  content: "→ ";
+  color: #3cb371;
+}
+
+.terminal_cursor {
+  color: #7fffd4;
+  animation: blink 0.8s step-end infinite;
+  margin-left: 2px;
+  font-size: 0.9em;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* scrollbar sutil */
+.terminal_body::-webkit-scrollbar {
+  width: 4px;
+}
+
+.terminal_body::-webkit-scrollbar-thumb {
+  background: #7fffd433;
+  border-radius: 4px;
+}

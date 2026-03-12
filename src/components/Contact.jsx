@@ -7,7 +7,7 @@ function Contact() {
   };
 
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Nombre: </label>
         <input type="text" name="name" />

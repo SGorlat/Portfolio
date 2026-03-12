@@ -3,37 +3,111 @@ import "../style/AboutMe.css";
 
 function AboutMe() {
   return (
-    <section className="info-container">
-      <img
-        className="avatar"
-        // src="/images/1245.jpg"
-        src="/images/230.jpg"
-        alt="my personal picture"
-      />
-      <div className="description">
-        <h2>Sobre mi</h2>
+    <section>
+      <div className="me">
+        <h2>Sobre mí</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit fames luctus
-          donec, massa morbi suspendisse purus vestibulum varius feugiat a
-          litora, euismod volutpat gravida pulvinar fermentum risus primis neque
-          interdum. Eu varius et aliquet platea diam sollicitudin leo volutpat
-          vehicula, mus rutrum nunc porta sed a urna. Vel commodo montes
-          lobortis ullamcorper auctor himenaeos ligula inceptos tristique duis
-          taciti, posuere luctus facilisi tempus potenti sollicitudin at dictum
-          egestas quisque arcu nam, pretium vitae nunc suscipit sodales
-          scelerisque phasellus platea vivamus vestibulum. Aenean posuere augue
-          natoque fringilla sociosqu varius pellentesque lacinia, cras mollis
-          nisi taciti nisl proin vehicula ridiculus, rhoncus himenaeos potenti
-          dapibus est tempus tellus. Nisi turpis lectus pulvinar dignissim hac
-          congue vestibulum sodales sagittis curabitur auctor ultricies,
-          facilisis etiam eleifend felis sem sociis laoreet blandit scelerisque
-          purus. Nisl platea venenatis mus massa hac magna pulvinar quis,
-          ultricies ultrices nascetur parturient laoreet habitasse litora,
-          sapien ut neque magnis primis risus facilisis.
+          Desarrollador Web Junior en formación activa, centrado en construir
+          una base sólida en desarrollo Full Stack. Actualmente curso DAW a la
+          vez que amplio mis conocimientos con la certificación de
+          profesionalidad IFCD0210 en Desarrollo Web, tambien he obtenido
+          recientemente la certificación en Python (PCEP1).
         </p>
+      </div>
+      <div className="info-container">
+        <div className="background">
+          <h3>Mi formación</h3>
+          <ul>
+            <li>Máster Full Stack Development (Nuclio)</li>
+            <li>1º DAW (Digitech)</li>
+            <li>IFCD0210 - Desarrollo Web</li>
+            <li>Certificado PCEP1 de Python</li>
+          </ul>
+        </div>
+        <div className="description_list">
+          <h3>Lo que me define como desarrollador</h3>
+          <ul>
+            <li> Entender a fondo antes que avanzar rápido </li>
+            <li> Valoro el código limpio y la arquitectura bien pensada</li>
+            <li> No me conformo con soluciones superficiales</li>
+            <li> Aprendizaje constante</li>
+          </ul>
+        </div>
+        <div className="l2p">
+          <h3>Mi proyecto principal</h3>
+          <h4>Link2Play - Red social de eventos gamer</h4>
+          <ul>
+            <li>Autenticación JWT</li>
+            <li>Chat en tiempo real con websockets</li>
+            <li>Creación de eventos y gestión de perfiles</li>
+            <li>Sistema de recomendación de eventos/usuarios</li>
+          </ul>
+        </div>
+        <div className="target">
+          <h3>Mi objetivo</h3>
+          <p>
+            Seguir creciendo como desarrollador Full Stack, consolidando una
+            base sólida para resolver problemas reales mediante soluciones
+            útiles y con valor. Me definen la constancia, el aprendizaje
+            continuo y las ganas de seguir evolucionando dentro del sector
+            tecnológico
+          </p>
+        </div>
       </div>
     </section>
   );
 }
 
 export default AboutMe;
+
+{
+  /* <section className="info-container">
+      <div>
+        <h2>Sobre mí</h2>
+        <p>
+          Desarrollador web junior en formación activa, centrado en construir
+          una base sólida en desarrollo Full Stack. Actualmente curso DAW a la
+          vez que amplio mis conocimientos con la certificacion de
+          profesionalidad IFCD0210 en Desarrollo Web, tambien he obtenido
+          recientemente la certificación en Python (PCEP1).
+        </p>
+      </div>
+      <div className="description">
+        <div>
+          <h3>Mi formación</h3>
+          <ul>
+            <li>Máster Full Stack (Nuclio)</li>
+            <li>1º DAW (Digitech)</li>
+            <li>IFCD0210 - Desarrollo Web</li>
+            <li>Certificado PCEP1 de Python</li>
+          </ul>
+        </div>
+        
+
+        <p>
+          Mi formación principal viene del Máster Full Stack de Nuclio, donde
+          trabajé con JavaScript, React, Node.js, Express y MongoDB.
+        </p>
+        <p>
+          Apliqué todo este aprendizake en Link2Play, mi proyecto más grande:
+          una red social gamer con sistema de autenticación, chat en tiempo real
+          con sockets, eventos y gestión de perfiles.
+        </p>
+        <p>Lo que me define como desarrollador:</p>
+        <ul>
+          <li> Prefiero entender a fondo antes que avanzar rápido </li>
+          <li> Valoro el código limpio y la arquitectura bien pensada</li>
+          <li> No me conformo con soluciones superficiales</li>
+          <li> Estoy en constante aprendizaje</li>
+        </ul>
+
+        <p>
+          Mi objetivo es seguir creciendo como desarrollador Full Stack,
+          consolidando una base sólida para resolver problemas reales mediante
+          soluciones útiles y con valor. Me definen la constancia, el
+          aprendizaje continuo y las ganas de seguir evolucionando dentro del
+          sector tecnológico
+        </p>
+      </div>
+    </section> */
+}

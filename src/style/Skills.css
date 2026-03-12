@@ -1,0 +1,174 @@
+/* .skills {
+  display: flex;
+  flex-direction: column;
+} */
+
+.skills {
+  margin-top: 50px;
+}
+
+.front h3,
+.back h2,
+.bbdd h3,
+.learning h3,
+.skills h3,
+.others h3,
+.skills h3 {
+  text-align: left;
+  font-size: 24px;
+}
+
+.front,
+.back,
+.bbdd,
+.tools,
+.others {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.learning {
+  background: rgba(238, 94, 11, 0.275);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.front ul,
+.back ul,
+.bbdd ul,
+.tools ul,
+.others ul,
+.learning ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+.front ul li,
+.back ul li,
+.bbdd ul li,
+.tools ul li,
+.others ul li,
+.learning ul li {
+  border: 3px solid #3700ff;
+  border-radius: 8px;
+  padding: 10px 10px;
+  font-size: 1.4em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background-color: #3777ab4a;
+}
+
+#ht5 {
+  color: orange;
+  font-size: 1.8em;
+}
+
+#css3 {
+  color: #22a9de;
+  font-size: 1.8em;
+}
+
+#js {
+  color: yellow;
+  font-size: 1.5em;
+  margin-right: 6px;
+}
+
+#react {
+  color: #22a9de;
+  font-size: 1.6em;
+  margin-right: 6px;
+}
+
+#node {
+  color: #03b203;
+  font-size: 1.8em;
+  margin-right: 6px;
+}
+
+#express {
+  color: gray;
+  font-size: 1.4em;
+  margin-top: 4px;
+  margin-right: 2px;
+}
+
+#js2 {
+  color: yellow;
+  font-size: 1em;
+  margin-right: 6px;
+}
+
+#mongo {
+  color: #03b203;
+  font-size: 1.7em;
+}
+
+#git {
+  color: #ffa500;
+  font-size: 1.6em;
+  margin-right: 4px;
+}
+
+#ghub {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin-right: 5px;
+}
+
+#postman {
+  color: #ffa500;
+  font-size: 1.4em;
+  margin-right: 5px;
+}
+
+#python {
+  color: #3776ab;
+  font-size: 1.4em;
+  margin-right: 5px;
+}
+
+#java {
+  color: #7ba0bd;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.java {
+  color: #f48f4c;
+}
+
+#php {
+  color: #7ba0bd;
+  font-size: 1.6em;
+  margin-right: 5px;
+}
+
+#sql {
+  color: #f48f4c;
+  font-size: 2em;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+#ts {
+  color: #4c85f9;
+  font-size: 1.3em;
+  margin-right: 6px;
+}

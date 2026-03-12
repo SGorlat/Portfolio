@@ -1,43 +1,89 @@
-.info-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.me {
+  max-width: 740px;
+  padding: 15px 30px;
+  margin: 0 auto;
+  margin-bottom: 25px;
   margin-top: 50px;
-  gap: 50px;
 }
 
-.avatar {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  padding: 2px;
-  border: 5px solid rgb(103, 207, 236);
-  object-fit: cover;
+.target,
+.l2p,
+.description_list,
+.background {
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.description {
-  margin-bottom: 80px;
-  width: 1050px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  border-top: 2px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 30px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
+.info-container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: auto auto; */
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.background {
+  background-color: #78f2c940;
+  border: 1px solid #78f2c9;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.description h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-  padding: 20px;
-  color: #548dd8;
+.background li,
+.description_list li {
+  list-style: none;
 }
 
-.description p {
-  font-size: 20px;
-  max-width: 950px;
+.background li::before {
+  content: "📚-"; /*cambiar por icono react icons*/
+  margin-right: 5px;
+}
+
+.description_list {
+  background-color: #001aff99;
+  border: 1px solid #001aff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description_list li::before {
+  content: "-"; /*cambiar por icono react icons*/
+  margin-right: 5px;
+}
+
+div > h3 {
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.l2p {
+  background-color: #7b00ff65;
+  border: 1px solid #7b00ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.l2p > h3 {
+  margin-bottom: 10px;
+}
+
+.l2p > h4 {
+  margin-bottom: 10px;
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
+
+.target {
+  background-color: #ff000065;
+  border: 1px solid #ff0000;
+  text-align: justify;
+}
+
+.target > p {
+  max-width: 500px;
+  margin: 0 auto;
 }
