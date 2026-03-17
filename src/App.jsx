@@ -6,16 +6,18 @@ import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import Home from "./components/Home";
 import Homecopy from "./components/Homecopy";
+import Projects from "./components/Projects";
 
 function App() {
   return (
     <>
       <div>
         <Navbar />
-        <Home />
+        {/* <Home /> */}
         <Homecopy />
         <AboutMe />
         <Skills />
+        <Projects />
         <Contact />
       </div>
     </>

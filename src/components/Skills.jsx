@@ -22,7 +22,7 @@ import "../style/Skills.css";
 
 function Skills() {
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <h2>Habilidades</h2>
       <section className="front">
         <h3>Frontend</h3>
