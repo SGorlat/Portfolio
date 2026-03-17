@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@400;600&display=swap");
+
+.projects {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.projects h2 {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: left;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-featured {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 35px;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  transition: border-color 0.3s ease;
+}
+
+.project-featured:hover {
+  border-color: #3700ff;
+}
+
+.project-featured img {
+  width: 50%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  object-fit: cover;
+}
+
+.project-featured-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.project-featured-info h3 {
+  font-size: 1.625rem;
+  font-weight: bold;
+  color: #66fcf1;
+  text-decoration: none;
+  text-shadow: 0 0 10px #66fcf1;
+  font-family: "Audiowide", sans-serif;
+}
+
+.project-featured-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  align-items: stretch;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  border-color: #3700ff;
+  transform: translateY(-4px);
+}
+
+.project-card h4 {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-stack span {
+  border: 2px solid #3700ff;
+  border-radius: 6px;
+  padding: 3px 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background-color: #3777ab1a;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.project-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-links a,
+.project-card a {
+  display: inline-block;
+  padding: 7px 18px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-github {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.btn-github:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.btn-demo {
+  background: #3700ff;
+  color: #ffffff;
+  border: 1px solid #3700ff;
+}
+
+.btn-demo:hover {
+  background: #2800cc;
+}
+
+.py,
+.todo {
+  width: fit-content;
+}
+
+.todoList-img {
+  height: 350px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .project-featured {
+    flex-direction: column;
+  }
+
+  .project-featured img {
+    width: 100%;
+  }
+}
