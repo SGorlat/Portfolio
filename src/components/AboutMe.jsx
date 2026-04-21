@@ -7,11 +7,11 @@ function AboutMe() {
       <div className="me">
         <h2>Sobre mí</h2>
         <p>
-          Desarrollador Web Junior en formación activa, centrado en construir
-          una base sólida en desarrollo Full Stack. Actualmente curso DAW a la
-          vez que amplio mis conocimientos con la certificación de
-          profesionalidad IFCD0210 en Desarrollo Web, tambien he obtenido
-          recientemente la certificación en Python (PCEP1).
+          Desarrollador Web en formación activa, centrado en construir una base
+          sólida en desarrollo Full Stack. Actualmente curso DAW a la vez que
+          amplio mis conocimientos con la certificación de profesionalidad
+          IFCD0210 en Desarrollo Web, tambien he obtenido recientemente la
+          certificación en Python (PCEP1).
         </p>
       </div>
       <div className="info-container">
@@ -65,7 +65,7 @@ export default AboutMe;
       <div>
         <h2>Sobre mí</h2>
         <p>
-          Desarrollador web junior en formación activa, centrado en construir
+          Desarrollador web en formación activa, centrado en construir
           una base sólida en desarrollo Full Stack. Actualmente curso DAW a la
           vez que amplio mis conocimientos con la certificacion de
           profesionalidad IFCD0210 en Desarrollo Web, tambien he obtenido
@@ -89,7 +89,7 @@ export default AboutMe;
           trabajé con JavaScript, React, Node.js, Express y MongoDB.
         </p>
         <p>
-          Apliqué todo este aprendizake en Link2Play, mi proyecto más grande:
+          Apliqué todo este aprendizaje en Link2Play, mi proyecto más grande:
           una red social gamer con sistema de autenticación, chat en tiempo real
           con sockets, eventos y gestión de perfiles.
         </p>

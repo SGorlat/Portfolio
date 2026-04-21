@@ -4,8 +4,8 @@ import Navbar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
+import Home2 from "./components/Home2";
 import Home from "./components/Home";
-import Homecopy from "./components/Homecopy";
 import Projects from "./components/Projects";
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
     <>
       <div>
         <Navbar />
-        {/* <Home /> */}
-        <Homecopy />
+        {/* <Home2 /> */}
+        <Home />
         <AboutMe />
         <Skills />
         <Projects />

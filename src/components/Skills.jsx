@@ -60,6 +60,10 @@ function Skills() {
               <SiJavascript id="js2" />
               Express.js
             </li>
+            <li className="java">
+              <FaJava id="java" />
+              Java
+            </li>
           </ul>
         </div>
       </section>
@@ -70,6 +74,10 @@ function Skills() {
             <li>
               <SiMongodb id="mongo" />
               MongoDB
+            </li>
+            <li>
+              <SiMysql id="sql" />
+              SQL
             </li>
           </ul>
         </div>
@@ -91,6 +99,7 @@ function Skills() {
               Postman
             </li>
             <li>MySQL Workbench</li>
+            <li>PostgreSQL</li>
           </ul>
         </div>
       </section>
@@ -102,10 +111,6 @@ function Skills() {
               <FaPython id="python" />
               Python
             </li>
-            <li className="java">
-              <FaJava id="java" />
-              Java
-            </li>
           </ul>
         </div>
       </section>
@@ -116,10 +121,6 @@ function Skills() {
             <li>
               <SiPhp id="php" />
               PHP
-            </li>
-            <li>
-              <SiMysql id="sql" />
-              SQL
             </li>
             <li>
               <SiTypescript id="ts" />
