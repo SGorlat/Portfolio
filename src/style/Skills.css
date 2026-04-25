@@ -1,174 +1,103 @@
-/* .skills {
-  display: flex;
-  flex-direction: column;
-} */
-
 .skills {
-  margin-top: 50px;
+  padding: 4rem 2rem;
+  color: #e5e7eb;
 }
 
-.front h3,
-.back h2,
-.bbdd h3,
-.learning h3,
-.skills h3,
-.others h3,
-.skills h3 {
-  text-align: left;
-  font-size: 24px;
+.skills h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
 }
 
-.front,
-.back,
-.bbdd,
-.tools,
-.others {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 30px;
-  max-width: 1200px;
+/* ===== Editor / ventana de código ===== */
+.skills-editor {
+  max-width: 720px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  background: #1a1d24;
+  border-radius: 10px;
+  border: 1px solid #2a2f3a;
+  overflow: hidden;
+  font-family: "Fira Code", "Consolas", monospace;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
-.learning {
-  background: rgba(238, 94, 11, 0.275);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-
-.front ul,
-.back ul,
-.bbdd ul,
-.tools ul,
-.others ul,
-.learning ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  justify-content: space-around;
-  padding: 25px;
-}
-
-.front ul li,
-.back ul li,
-.bbdd ul li,
-.tools ul li,
-.others ul li,
-.learning ul li {
-  border: 3px solid #3700ff;
-  border-radius: 8px;
-  padding: 10px 10px;
-  font-size: 1.4em;
-  font-weight: 700;
+.editor-header {
+  background: #12151a;
+  padding: 0.6rem 1rem;
   display: flex;
   align-items: center;
-  gap: 2px;
-  background-color: #3777ab4a;
+  gap: 0.5rem;
+  border-bottom: 1px solid #2a2f3a;
 }
 
-#ht5 {
-  color: orange;
-  font-size: 1.8em;
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-#css3 {
-  color: #22a9de;
-  font-size: 1.8em;
+.dot.red {
+  background: #ff5f56;
+}
+.dot.yellow {
+  background: #ffbd2e;
+}
+.dot.green {
+  background: #27c93f;
 }
 
-#js {
-  color: yellow;
-  font-size: 1.5em;
-  margin-right: 6px;
+.filename {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
 }
 
-#react {
-  color: #22a9de;
-  font-size: 1.6em;
-  margin-right: 6px;
+/* ===== Cuerpo del editor ===== */
+.editor-body {
+  padding: 1.2rem 1.5rem;
 }
 
-#node {
-  color: #03b203;
-  font-size: 1.8em;
-  margin-right: 6px;
+.editor-body p {
+  margin: 0;
+  white-space: nowrap;
 }
 
-#express {
-  color: gray;
-  font-size: 1.4em;
-  margin-top: 4px;
-  margin-right: 2px;
+.indent-1 {
+  padding-left: 1.5rem;
+}
+.indent-2 {
+  padding-left: 3rem;
 }
 
-#js2 {
-  color: yellow;
-  font-size: 1em;
-  margin-right: 6px;
-}
+/* ===== Coloreado estilo VSCode / One Dark ===== */
+.key {
+  color: #e06c75;
+} /* rojo-rosa para keys */
+.str {
+  color: #98c379;
+} /* verde para strings */
+.punct {
+  color: #abb2bf;
+} /* gris claro para comas/dos puntos */
+.brace {
+  color: #c678dd;
+} /* morado para llaves */
 
-#mongo {
-  color: #03b203;
-  font-size: 1.7em;
-}
-
-#git {
-  color: #ffa500;
-  font-size: 1.6em;
-  margin-right: 4px;
-}
-
-#ghub {
-  color: #ffffff;
-  font-size: 1.5em;
-  margin-right: 5px;
-}
-
-#postman {
-  color: #ffa500;
-  font-size: 1.4em;
-  margin-right: 5px;
-}
-
-#python {
-  color: #3776ab;
-  font-size: 1.4em;
-  margin-right: 5px;
-}
-
-#java {
-  color: #7ba0bd;
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-.java {
-  color: #f48f4c;
-}
-
-#php {
-  color: #7ba0bd;
-  font-size: 1.6em;
-  margin-right: 5px;
-}
-
-#sql {
-  color: #f48f4c;
-  font-size: 2em;
-  margin-right: 5px;
-  margin-bottom: 5px;
-}
-
-#ts {
-  color: #4c85f9;
-  font-size: 1.3em;
-  margin-right: 6px;
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .skills-editor {
+    font-size: 0.8rem;
+  }
+  .indent-1 {
+    padding-left: 1rem;
+  }
+  .indent-2 {
+    padding-left: 2rem;
+  }
+  .editor-body {
+    padding: 1rem 0.8rem;
+  }
 }

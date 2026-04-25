@@ -1,173 +1,128 @@
-import React from "react";
-import {
-  FaReact,
-  FaPython,
-  FaHtml5,
-  FaCss3Alt,
-  FaJava,
-  FaNode,
-  FaGitAlt,
-  FaGithub,
-} from "react-icons/fa";
-import {
-  SiMongodb,
-  SiExpress,
-  SiJavascript,
-  SiPostman,
-  SiMysql,
-  SiPhp,
-  SiTypescript,
-} from "react-icons/si";
 import "../style/Skills.css";
+
+const skillsData = [
+  { key: "javascript", value: "^ES6" },
+  { key: "React", value: "^21.x" },
+  { key: "node", value: "^20.x" },
+  { key: "express", value: "^4.x" },
+  { key: "JAVA", value: "^25.x" },
+  { key: "mongodb", value: "^7.x" },
+  { key: "SQL", value: "^8.x" },
+  { key: "HTML", value: "5" },
+  { key: "CSS", value: "3" },
+];
+
+const devTools = [
+  { key: "git", value: "latest" },
+  { key: "github", value: "latest" },
+  { key: "postman", value: "latest" },
+  { key: "mysql-workbench", value: "latest" },
+  { key: "postgresSQL", value: "latest" },
+  { key: "socket.io", value: "^4.x" },
+];
+
+const languages = ["JavaScript", "Java", "Python"];
+const learning = ["Spring Boot", "PHP"];
 
 function Skills() {
   return (
     <div className="skills" id="skills">
       <h2>Habilidades</h2>
-      <section className="front">
-        <h3>Frontend</h3>
-        <div>
-          <ul>
-            <li>
-              <FaHtml5 id="ht5" />
-              HTML
-            </li>
-            <li>
-              <FaCss3Alt id="css3" />
-              CSS
-            </li>
-            <li>
-              <SiJavascript id="js" />
-              JavaScript
-            </li>
-            <li>
-              <FaReact id="react" />
-              React
-            </li>
-          </ul>
+
+      <div className="skills-editor">
+        <div className="editor-header">
+          <span className="dot red"></span>
+          <span className="dot yellow"></span>
+          <span className="dot green"></span>
+          <span className="filename">skills.json</span>
         </div>
-      </section>
-      <section className="back">
-        <h3>Backend</h3>
-        <div>
-          <ul>
-            <li>
-              <FaNode id="node" />
-              Node.js
-            </li>
-            <li>
-              <SiExpress id="express" />
-              <SiJavascript id="js2" />
-              Express.js
-            </li>
-            <li className="java">
-              <FaJava id="java" />
-              Java
-            </li>
-          </ul>
+
+        <div className="editor-body">
+          <p>
+            <span className="brace">{"{"}</span>
+          </p>
+
+          <p className="indent-1">
+            <span className="key">"name"</span>
+            <span className="punct">: </span>
+            <span className="str">"salvador-ortega"</span>
+            <span className="punct">,</span>
+          </p>
+
+          <p className="indent-1">
+            <span className="key">"role"</span>
+            <span className="punct">: </span>
+            <span className="str">"Full Stack Developer"</span>
+            <span className="punct">,</span>
+          </p>
+
+          <p className="indent-1">
+            <span className="key">"dependencies"</span>
+            <span className="punct">: </span>
+            <span className="brace">{"{"}</span>
+          </p>
+          {skillsData.map((s, i) => (
+            <p key={s.key} className="indent-2">
+              <span className="key">"{s.key}"</span>
+              <span className="punct">: </span>
+              <span className="str">"{s.value}"</span>
+              {i < skillsData.length - 1 && <span className="punct">,</span>}
+            </p>
+          ))}
+          <p className="indent-1">
+            <span className="brace">{"}"}</span>
+            <span className="punct">,</span>
+          </p>
+
+          <p className="indent-1">
+            <span className="key">"devDependencies"</span>
+            <span className="punct">: </span>
+            <span className="brace">{"{"}</span>
+          </p>
+          {devTools.map((s, i) => (
+            <p key={s.key} className="indent-2">
+              <span className="key">"{s.key}"</span>
+              <span className="punct">: </span>
+              <span className="str">"{s.value}"</span>
+              {i < devTools.length - 1 && <span className="punct">,</span>}
+            </p>
+          ))}
+          <p className="indent-1">
+            <span className="brace">{"}"}</span>
+            <span className="punct">,</span>
+          </p>
+
+          <p className="indent-1">
+            <span className="key">"languages"</span>
+            <span className="punct">: [</span>
+            {languages.map((l, i) => (
+              <span key={l}>
+                <span className="str">"{l}"</span>
+                {i < languages.length - 1 && <span className="punct">, </span>}
+              </span>
+            ))}
+            <span className="punct">],</span>
+          </p>
+
+          <p className="indent-1">
+            <span className="key">"learning"</span>
+            <span className="punct">: [</span>
+            {learning.map((l, i) => (
+              <span key={l}>
+                <span className="str">"{l}"</span>
+                {i < learning.length - 1 && <span className="punct">, </span>}
+              </span>
+            ))}
+            <span className="punct">]</span>
+          </p>
+
+          <p>
+            <span className="brace">{"}"}</span>
+          </p>
         </div>
-      </section>
-      <section className="bbdd">
-        <h3>Base Datos</h3>
-        <div>
-          <ul>
-            <li>
-              <SiMongodb id="mongo" />
-              MongoDB
-            </li>
-            <li>
-              <SiMysql id="sql" />
-              SQL
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section className="tools">
-        <h3>Herramientas</h3>
-        <div>
-          <ul>
-            <li>
-              <FaGitAlt id="git" />
-              Git
-            </li>
-            <li>
-              <FaGithub id="ghub" />
-              GitHub
-            </li>
-            <li>
-              <SiPostman id="postman" />
-              Postman
-            </li>
-            <li>MySQL Workbench</li>
-            <li>PostgreSQL</li>
-          </ul>
-        </div>
-      </section>
-      <section className="others">
-        <h3>Otros Lenguajes</h3>
-        <div>
-          <ul>
-            <li>
-              <FaPython id="python" />
-              Python
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section className="learning">
-        <h3>En aprendizaje</h3>
-        <div>
-          <ul>
-            <li>
-              <SiPhp id="php" />
-              PHP
-            </li>
-            <li>
-              <SiTypescript id="ts" />
-              TypeScript
-            </li>
-          </ul>
-        </div>
-      </section>
+      </div>
     </div>
   );
 }
 
 export default Skills;
-
-// <div>
-//         <ul>
-//           <li>
-//             <FaHtml5 />
-//             HTML
-//           </li>
-//           <li>
-//             <FaCss3 />
-//             CSS
-//           </li>
-//           <li>
-//             <RiJavascriptLine />
-//             JavaScript
-//           </li>
-//           <li>
-//             <FaPython />
-//             Python
-//           </li>
-//           <li>
-//             <FaJava />
-//             Java
-//           </li>
-//           <li>
-//             <FaReact />
-//             React
-//           </li>
-//           <li>
-//             <SiExpress />
-//             Express.js (mongoose)
-//           </li>
-//           <li>
-//             <DiMongodb />
-//             MONGO DB
-//           </li>
-//         </ul>
-//       </div>

@@ -229,6 +229,10 @@ function Home() {
     }
   }, [fading]);
 
+  const scrollToSkills = () => {
+    document.getElementById("skills").scrollIntoView({ behavior: "smooth" }); // scrollIntoView es metodo nativo que hace scroll hasta ese id
+  };
+
   return (
     <div className="content_dev">
       <h2 className="welcome">Bienvenido a mi portfolio</h2>
@@ -242,9 +246,9 @@ function Home() {
               soy <span id="salva">Salva!</span>
             </h2>
             {/* <div className="cv"> */}
-            <button className="more_info">
+            {/* <button className="more_info">
               <a href="#about">Más sobre mi</a>
-            </button>
+            </button> */}
             {/* <a
               className="online-cv"
               href="/CV/SALVADOR_ORTEGA_CV.pdf"
@@ -264,12 +268,16 @@ function Home() {
           </div>
 
           <h3>Desarrollador Full Stack en formación</h3>
-
-          <p className="resume-me">
-            HTML &amp; CSS | JavaScript | React | Constante | Aprendizaje rápido
-            | Motivado | Comprometido |
-          </p>
-
+          <div className="resume-content">
+            <p className="resume-me">
+              <span style={{ marginLeft: 55 }}>
+                {" "}
+                HTML &amp; CSS | JavaScript | React | Java | SQL |
+              </span>{" "}
+              <br />
+              Constante | Aprendizaje rápido | Motivado | Comprometido |
+            </p>
+          </div>
           <FloatingSkills />
         </section>
 
@@ -306,7 +314,7 @@ function Home() {
             </div>
           </div>
 
-          <button className="btn_show">
+          <button className="btn_show" onClick={scrollToSkills}>
             <span className="btn_salva">salva</span>
             .showSkills <span className="yell">()</span>;
           </button>

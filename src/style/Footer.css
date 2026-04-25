@@ -1,0 +1,31 @@
+.final {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid rgba(0, 229, 195, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.final p {
+  color: #8b949e;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.final a {
+  color: aquamarine;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.final a:hover {
+  opacity: 0.7;
+}
+
+.footer-sep {
+  color: rgba(0, 229, 195, 0.3);
+}

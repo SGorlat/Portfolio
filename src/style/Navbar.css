@@ -14,15 +14,15 @@
 
 .me-content ul {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   list-style: none;
 }
 
 .me-content a {
   text-decoration: none;
-  color: white;
-  padding: 6px 10px;
-  font-size: 1.5rem;
+  color: rgb(226, 222, 222);
+  padding: 2px 8px;
+  font-size: 1.2rem;
 }
 
 .me-content a:hover {
