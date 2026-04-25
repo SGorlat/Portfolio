@@ -6,12 +6,12 @@ const skills = [
   { name: "CSS3", color: "#1572b6" },
   { name: "JavaScript", color: "#f7df1e" },
   { name: "React", color: "#61dafb" },
-  { name: "Node.js", color: "#7fffd4" },
-  { name: "Express", color: "#e3965a" },
-  { name: "Python", color: "#3cb371" },
-  { name: "Java", color: "#d34fc4" },
-  { name: "Git", color: "#20b2aa" },
+  { name: "Java", color: "#d3694f" },
   { name: "SQL", color: "#eaea96" },
+  { name: "Node.js", color: "#7fffd4" },
+  { name: "Express", color: "#be5ae3" },
+  { name: "Python", color: "#3cb371" },
+  { name: "Git", color: "#20b2aa" },
 ];
 
 function FloatingSkills() {

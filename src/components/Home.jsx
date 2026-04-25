@@ -102,7 +102,7 @@ const codeLines = [
       { text: "this", cls: "blue" },
       { text: ".description = " },
       {
-        text: '"Estudiante de DAW, con formación previa en el Máster de Desarrollo Full Stack de Nuclio. Me encuentro en una etapa de aprendizaje constante, buscando reforzar bien mis fundamentos y entender la lógica detrás de cada solución."',
+        text: '"Formación previa en el Máster de Desarrollo Full Stack de Nuclio, actualmente estudiando DAW y compaginandolo con el IFCD0210 - Desarrollo de Aplicaciones con Tecnologías Web. Me encuentro en una etapa de aprendizaje constante, buscando reforzar bien mis fundamentos y entender la lógica detrás de cada solución."',
         cls: "brown",
       },
       { text: ";" },
@@ -156,7 +156,7 @@ const codeLines = [
       { text: ".name " },
       { text: "}", cls: "yell" },
       {
-        text: " - Desarrollador Full Stack en formación activa`",
+        text: " - Desarrollador Full Stack`",
         cls: "brown",
       },
       { text: ")", cls: "blue" },
@@ -191,7 +191,7 @@ const codeLines = [
       { text: "salva" },
       { text: "= " },
       { text: "new " },
-      { text: "FullStackDeveloperJr" },
+      { text: "FullStackDeveloper" },
       { text: "(", cls: "yell" },
       { text: '"Salva",37', cls: "brown" },
       { text: ");", cls: "yell" },
@@ -235,7 +235,9 @@ function Home() {
 
   return (
     <div className="content_dev">
-      <h2 className="welcome">Bienvenido a mi portfolio</h2>
+      <h2 className="welcome">
+        ~/portfolio v1.0 · status: En busca de prácticas
+      </h2>
       <div className="wii">
         {/* ===== SECCIÓN IZQUIERDA ===== */}
         <section className="left_home">
@@ -266,16 +268,15 @@ function Home() {
             </a> */}
             {/* </div> */}
           </div>
-
-          <h3>Desarrollador Full Stack en formación</h3>
+          <h3>Desarrollador Full Stack</h3>
           <div className="resume-content">
             <p className="resume-me">
-              <span style={{ marginLeft: 55 }}>
-                {" "}
-                HTML &amp; CSS | JavaScript | React | Java | SQL |
-              </span>{" "}
-              <br />
-              Constante | Aprendizaje rápido | Motivado | Comprometido |
+              JavaScript · Java · SQL · React <span className="sep">|</span>{" "}
+              Node · Express · MongoDB
+            </p>
+            <p className="resume-context">
+              Cursando DAW + IFCD0210 <span className="sep">|</span> Granada{" "}
+              <span className="sep">|</span> Buscando prácticas
             </p>
           </div>
           <FloatingSkills />

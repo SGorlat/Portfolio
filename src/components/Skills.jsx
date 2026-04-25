@@ -1,13 +1,13 @@
 import "../style/Skills.css";
 
 const skillsData = [
-  { key: "javascript", value: "^ES6" },
-  { key: "React", value: "^21.x" },
+  { key: "javascript", value: "^ES2024" },
+  { key: "React", value: "^19.x" },
   { key: "node", value: "^20.x" },
   { key: "express", value: "^4.x" },
-  { key: "JAVA", value: "^25.x" },
+  { key: "Java", value: "^21.x" },
   { key: "mongodb", value: "^7.x" },
-  { key: "SQL", value: "^8.x" },
+  { key: "SQL", value: "^postgresql/workbench" },
   { key: "HTML", value: "5" },
   { key: "CSS", value: "3" },
 ];
