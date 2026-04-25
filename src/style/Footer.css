@@ -29,3 +29,12 @@
 .footer-sep {
   color: rgba(0, 229, 195, 0.3);
 }
+
+@media (max-width: 600px) {
+  .final p {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.8;
+  }
+}

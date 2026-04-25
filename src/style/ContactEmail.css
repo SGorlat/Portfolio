@@ -1,0 +1,150 @@
+#contact {
+  padding: 1rem 2rem 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#titulo-contacto {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e6edf3;
+}
+
+#contact > .card {
+  width: 100%;
+  max-width: 600px;
+  background: #1a1d24;
+  border: 1px solid rgba(0, 229, 195, 0.15);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 0 80px rgba(127, 255, 212, 0.03);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+#contact > .card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 229, 195, 0.3);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 30px 80px rgba(0, 0, 0, 0.5),
+    0 0 100px rgba(127, 255, 212, 0.07);
+}
+
+#contact .card > p {
+  color: #8b949e;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 1.2rem;
+}
+
+.form-contact label {
+  color: #8b949e;
+  font-size: 0.85rem;
+}
+
+.form-contact input,
+.form-contact textarea {
+  background: #0d1117;
+  border: 1px solid rgba(0, 229, 195, 0.2);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #e6edf3;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.form-contact textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-contact input:focus,
+.form-contact textarea:focus {
+  border-color: aquamarine;
+}
+
+.form-button {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+#btn1,
+#btn2 {
+  font-family: inherit;
+  font-weight: 700;
+  padding: 10px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+
+#btn1 {
+  background: aquamarine;
+  color: #0d1117;
+  border: none;
+}
+
+#btn1:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+#btn1:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#btn2 {
+  background: transparent;
+  color: aquamarine;
+  border: 1px solid aquamarine;
+}
+
+#btn2:hover {
+  background: rgba(127, 255, 212, 0.1);
+  transform: translateY(-2px);
+}
+
+.status-ok {
+  color: aquamarine;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  background: rgba(127, 255, 212, 0.08);
+  border: 1px solid rgba(127, 255, 212, 0.25);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.status-error {
+  color: #ff6b6b;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  background: rgba(255, 107, 107, 0.08);
+  border: 1px solid rgba(255, 107, 107, 0.25);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,11 @@
+.section-divider {
+  text-align: center;
+  margin: 4rem 0 0.5rem 0;
+  font-family: "Fira Code", "Consolas", monospace;
+}
+
+.divider-comment {
+  color: #5c6370;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}

@@ -19,18 +19,21 @@ function AboutMe() {
             <span className="asterisk">*</span>{" "}
             <span className="tag">@formacion</span>
           </p>
+
+          <p className="jsdoc-line">
+            <span className="asterisk">*</span> - 1º DAW — Digitech (Actualidad)
+          </p>
+          <p className="jsdoc-line">
+            <span className="asterisk">*</span> - IFCD0210 — Desarrollo de
+            Aplicaciones con Tecnologías Web (Actualidad)
+          </p>
           <p className="jsdoc-line">
             <span className="asterisk">*</span> - Máster Full Stack Development
-            — Nuclio
+            — Nuclio Digital School (2025)
           </p>
           <p className="jsdoc-line">
-            <span className="asterisk">*</span> - 1º DAW — Digitech
-          </p>
-          <p className="jsdoc-line">
-            <span className="asterisk">*</span> - IFCD0210 — Desarrollo Web
-          </p>
-          <p className="jsdoc-line">
-            <span className="asterisk">*</span> - PCEP1 Python (certificado)
+            <span className="asterisk">*</span> - PCEP1 Python (certificado
+            Entry Level)
           </p>
           <p className="jsdoc-line jsdoc-close">*/</p>
         </div>
@@ -72,14 +75,15 @@ function AboutMe() {
           </p>
           <p className="jsdoc-line">
             <span className="asterisk">*</span> Seguir creciendo como
-            desarrollador, aprendiendo algo nuevo cada día,
+            desarrollador aprendiendo algo nuevo cada día.
           </p>
           <p className="jsdoc-line">
-            <span className="asterisk">*</span> consolidarme como Full Stack
-            capaz de construir producto real y soluciones que aporten valor,
+            <span className="asterisk">*</span> Consolidarme como Full Stack
+            Developer capaz de construir producto real y soluciones que aporten
+            valor.
           </p>
           <p className="jsdoc-line">
-            <span className="asterisk">*</span> y acabar formando parte de un
+            <span className="asterisk">*</span> Acabar formando parte de un
             equipo técnico donde dar lo mejor de mí.
           </p>
           {/* <p className="jsdoc-line">

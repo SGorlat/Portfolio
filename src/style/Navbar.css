@@ -1,15 +1,11 @@
-.navbar-content {
+/* .navbar-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 10vw;
   padding: 16px 24px;
-  /* background-image: url("../../public/images/Banner_Developer.png");
-  background-position-x: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed; */
+
 }
 
 .me-content ul {
@@ -68,4 +64,216 @@
   to {
     background-position-x: -100px;
   }
+} */
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 24px 32px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.name {
+  font-size: 6rem;
+  font-family: "Inter", sans-serif;
+  background-image: url("/images/Banner_Developer.png");
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  animation: animate 20s linear infinite;
+  margin: 0;
+  line-height: 1;
+}
+
+@keyframes animate {
+  to {
+    background-position-x: -100px;
+  }
+}
+
+.me-content ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.me-content a {
+  text-decoration: none;
+  color: rgb(226, 222, 222);
+  padding: 2px 8px;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.me-content a:hover {
+  text-decoration: underline;
+  color: aquamarine;
+}
+
+.cv-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.online-cv {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s;
+}
+
+.online-cv:hover {
+  color: aquamarine;
+}
+
+.download-cv {
+  padding: 8px 24px;
+  border-radius: 10px;
+  background-color: rgb(53, 74, 80);
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: beige;
+  transition: background-color 0.2s;
+}
+
+.download-cv:hover {
+  background-color: rgb(73, 100, 110);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 100;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: aquamarine;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+@media (max-width: 1024px) {
+  .name {
+    font-size: 3rem;
+  }
+
+  .me-content a {
+    font-size: 1rem;
+  }
+
+  .cv-content {
+    font-size: 0.9rem;
+  }
+
+  .download-cv {
+    padding: 6px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-content {
+    padding: 12px 20px;
+  }
+
+  .name {
+    font-size: 2.2rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .me-content,
+  .cv-content {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: rgba(13, 17, 23, 0.98);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    flex-direction: column;
+    gap: 1rem;
+    transform: translateY(-150%);
+    opacity: 0;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  .me-content.open,
+  .cv-content.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .cv-content.open {
+    top: calc(100% + 280px);
+    border-top: 1px solid rgba(127, 255, 212, 0.1);
+  }
+
+  .me-content ul {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .me-content a {
+    font-size: 1.2rem;
+  }
+
+  .cv-content {
+    align-items: center;
+  }
+}
+
+/* ===== TABLET (≤ 1024px) ===== */
+@media (max-width: 1024px) {
+  .name {
+    font-size: 4rem; /* antes 3rem */
+  }
+  /* ... el resto igual */
+}
+
+/* ===== MÓVIL (≤ 768px) ===== */
+@media (max-width: 768px) {
+  .navbar-content {
+    padding: 16px 20px;
+    margin-bottom: 1rem;
+  }
+  .name {
+    font-size: 2.8rem; /* antes 2.2rem */
+  }
+  /* ... el resto igual */
 }

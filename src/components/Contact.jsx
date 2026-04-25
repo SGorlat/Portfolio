@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import "../style/Contact.css";
 
 function Contact() {
@@ -9,16 +8,6 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setStatus("enviando");
-
-    emailjs
-      .sendForm(
-        "TU_SERVICE_ID",
-        "TU_TEMPLATE_ID",
-        form.current,
-        "TU_PUBLIC_KEY",
-      )
-      .then(() => setStatus("ok"))
-      .catch(() => setStatus("error"));
   };
 
   return (

@@ -5,8 +5,8 @@
   color: #e5e7eb;
 } */
 .about-section {
-  padding: 4rem 2rem;
-  max-width: 100%; /* que ocupe todo el viewport */
+  padding: 1rem 2rem 16rem 2rem;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -49,7 +49,7 @@
   margin: 0 auto;
 }
 
-.jsdoc-block {
+/* .jsdoc-block {
   background: #1a1d24;
   border-left: 3px solid #32aedf;
   border-radius: 6px;
@@ -57,7 +57,42 @@
   font-family: "Fira Code", "Consolas", monospace;
   font-size: 0.95rem;
   line-height: 1.8;
-  /* white-space: nowrap;  <-- borra esta línea */
+} */
+
+.jsdoc-block {
+  background: #1a1d24;
+  border-left: 3px solid #32aedf;
+  border-radius: 6px;
+  padding: 1rem 1.3rem;
+  font-family: "Fira Code", "Consolas", monospace;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 10px 30px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(127, 255, 212, 0.02);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-left-color 0.3s ease;
+}
+
+.jsdoc-block:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 15px 40px rgba(0, 0, 0, 0.4),
+    0 0 60px rgba(127, 255, 212, 0.06);
+}
+
+.block-blue:hover {
+  border-left-color: #5fc4ed;
+}
+.block-purple:hover {
+  border-left-color: #d68fe5;
+}
+.block-green:hover {
+  border-left-color: #b0d490;
 }
 
 .jsdoc-line {

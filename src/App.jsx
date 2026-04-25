@@ -8,6 +8,8 @@ import Home2 from "./components/Home2";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import ContactEmail from "./components/ContactEmail";
+import SectionDivider from "./components/SectionDivider";
 
 function App() {
   return (
@@ -16,10 +18,15 @@ function App() {
         <Navbar />
         {/* <Home2 /> */}
         <Home />
+        <SectionDivider label="About-me" />
         <AboutMe />
+        <SectionDivider label="Skills" />
         <Skills />
+        <SectionDivider label="Projects" />
         <Projects />
-        <Contact />
+        {/* <Contact /> */}
+        <SectionDivider label="Contact" />
+        <ContactEmail />
         <Footer />
       </div>
     </>
