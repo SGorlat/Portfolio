@@ -11,6 +11,7 @@ const lines = [
   "Express",
   "Python",
   "Java",
+  "PHP",
   "Git",
   "SQL",
   '> salva.status = "Listo para trabajar" ✔',
