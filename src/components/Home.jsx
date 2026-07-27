@@ -271,8 +271,8 @@ function Home() {
           <h3>Desarrollador Full Stack</h3>
           <div className="resume-content">
             <p className="resume-me">
-              JavaScript · Java · SQL · React <span className="sep">|</span>{" "}
-              Node · Express · MongoDB
+              JavaScript · Java · PHP · Python · SQL/PostgreSQL · React{" "}
+              <span className="sep">|</span> Node · Express · MongoDB
             </p>
             <p className="resume-context">
               Cursando 2º DAW <span className="sep">|</span> Granada{" "}
