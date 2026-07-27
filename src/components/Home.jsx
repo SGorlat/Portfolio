@@ -36,7 +36,7 @@ const codeLines = [
       { text: ".skills= " },
       { text: "[", cls: "blue" },
       {
-        text: '"HTML5,CSS,JavaScript,React,Node.js,Express,Python,Java"',
+        text: '"HTML5,CSS,JavaScript,React,Node.js,Express,Python,Java,PHP"',
         cls: "brown",
       },
       { text: "]", cls: "blue" },
@@ -271,7 +271,7 @@ function Home() {
           <h3>Desarrollador Full Stack</h3>
           <div className="resume-content">
             <p className="resume-me">
-              JavaScript · Java · PHP · Python · SQL/PostgreSQL · React{" "}
+              JavaScript · Java · PHP · Python · SQL · React{" "}
               <span className="sep">|</span> Node · Express · MongoDB
             </p>
             <p className="resume-context">
