@@ -100,7 +100,7 @@ function Navbar() {
       <section className={`cv-content ${menuOpen ? "open" : ""}`}>
         <a
           className="online-cv"
-          href="/CV/cv-salvador_ortega_gorlat.pdf"
+          href="/CV/CV-SALVADOR_ORTEGA_ACT.pdf"
           target="_blank"
           rel="noopener noreferrer"
           onClick={handleLinkClick}
@@ -109,8 +109,8 @@ function Navbar() {
         </a>
         <a
           className="download-cv"
-          href="/CV/cv-salvador_ortega_gorlat.pdf"
-          download="cv-salvador_ortega_gorlat.pdf"
+          href="/CV/CV-SALVADOR_ORTEGA_ACT.pdf"
+          download="CV-SALVADOR_ORTEGA_ACT.pdf"
           onClick={handleLinkClick}
         >
           Descargar CV

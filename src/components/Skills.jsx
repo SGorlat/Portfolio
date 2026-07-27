@@ -6,6 +6,7 @@ const skillsData = [
   { key: "node", value: "^20.x" },
   { key: "express", value: "^4.x" },
   { key: "Java", value: "^21.x" },
+  { key: "PHP", value: "^8.x" },
   { key: "mongodb", value: "^7.x" },
   { key: "SQL", value: "^postgresql/workbench" },
   { key: "HTML", value: "5" },
@@ -21,8 +22,8 @@ const devTools = [
   { key: "socket.io", value: "^4.x" },
 ];
 
-const languages = ["JavaScript", "Java", "Python"];
-const learning = ["Spring Boot", "PHP"];
+const languages = ["JavaScript", "Java", "Python", "PHP"];
+const learning = ["Spring Boot", "Odoo"];
 
 function Skills() {
   return (

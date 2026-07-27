@@ -10,11 +10,13 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import ContactEmail from "./components/ContactEmail";
 import SectionDivider from "./components/SectionDivider";
+import BackgroundGlyphs from "./components/BackgroundGlyphs";
 
 function App() {
   return (
     <>
       <div>
+        <BackgroundGlyphs />
         <Navbar />
         {/* <Home2 /> */}
         <Home />

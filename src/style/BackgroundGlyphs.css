@@ -1,0 +1,6 @@
+.bg-glyphs {
+  position: fixed;
+  inset: 0;
+  z-index: -1; /* detrás de todo el contenido, sin tocar z-index de Navbar (100) ni otros */
+  pointer-events: none; /* nunca bloquea clics ni scroll */
+}

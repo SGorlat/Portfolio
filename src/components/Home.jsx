@@ -64,7 +64,7 @@ const codeLines = [
     colors: [
       { text: "digitech: " },
       {
-        text: '"1º Ciclo Superior Desarrollo Aplicaciones Web (DAW)"',
+        text: '"2º Ciclo Superior Desarrollo Aplicaciones Web (DAW)"',
         cls: "brown",
       },
       { text: "," },
@@ -102,7 +102,7 @@ const codeLines = [
       { text: "this", cls: "blue" },
       { text: ".description = " },
       {
-        text: '"Formación previa en el Máster de Desarrollo Full Stack de Nuclio, actualmente estudiando DAW y compaginandolo con el IFCD0210 - Desarrollo de Aplicaciones con Tecnologías Web. Me encuentro en una etapa de aprendizaje constante, buscando reforzar bien mis fundamentos y entender la lógica detrás de cada solución."',
+        text: '"Formación previa en el Máster de Desarrollo Full Stack de Nuclio, IFCD0210 - Desarrollo de Aplicaciones con Tecnologías Web y actualmente estudiando 2º DAW. Me encuentro en una etapa de aprendizaje constante, buscando reforzar bien mis fundamentos y entender la lógica detrás de cada solución."',
         cls: "brown",
       },
       { text: ";" },
@@ -275,8 +275,9 @@ function Home() {
               Node · Express · MongoDB
             </p>
             <p className="resume-context">
-              Cursando DAW + IFCD0210 <span className="sep">|</span> Granada{" "}
-              <span className="sep">|</span> Buscando prácticas
+              Cursando 2º DAW <span className="sep">|</span> Granada{" "}
+              <span className="sep">|</span> Buscando primera oportunidad
+              laboral
             </p>
           </div>
           <FloatingSkills />

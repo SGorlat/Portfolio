@@ -75,6 +75,9 @@
     transform 0.3s ease,
     box-shadow 0.3s ease,
     border-left-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .jsdoc-block:hover {

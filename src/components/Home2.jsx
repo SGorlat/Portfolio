@@ -14,10 +14,10 @@ function Home() {
           <h3>- Desarrollador Web en formación -</h3>
           <div className="info">
             <p className="home_paragraph">
-              Estudiante de DAW, con formación previa en el Máster de Desarrollo
-              Full Stack de Nuclio. Me encuentro en una etapa de aprendizaje
-              constante, buscAndo reforzar bien mis fundamentos y entender la
-              lógica detrás de cada solución.
+              Estudiante de 2º DAW, con formación previa en el Máster de
+              Desarrollo Full Stack de Nuclio. Me encuentro en una etapa de
+              aprendizaje constante, buscando reforzar bien mis fundamentos y
+              entender la lógica detrás de cada solución.
             </p>
             <p>
               Soy curioso, constante y tengo muchas ganas de seguir creciendo

@@ -6,10 +6,11 @@ function AboutMe() {
       <h2>Sobre mí</h2>
 
       <p className="about-intro">
-        Desarrollador Full Stack con formación en el Máster de Nuclio y
-        actualmente cursando DAW en Digitech y el certificado IFCD0210. Mi foco
-        es construir proyectos completos que integren frontend, backend y base
-        de datos con criterio.
+        Desarrollador Full Stack con formación en el Máster de Nuclio,
+        certificado profesional IFCD0210 en Desarrollo de Aplicaciones con
+        Tecnologias Web y actualmente cursando 2º DAW en Digitech y el
+        certificado IFCD0210. Mi foco es construir proyectos completos que
+        integren frontend, backend y base de datos con criterio.
       </p>
 
       <div className="jsdoc-blocks">
@@ -21,19 +22,18 @@ function AboutMe() {
           </p>
 
           <p className="jsdoc-line">
-            <span className="asterisk">*</span> - 1º DAW — Digitech (Actualidad)
+            <span className="asterisk">*</span> - 2º DAW — Digitech (Actualidad)
           </p>
           <p className="jsdoc-line">
             <span className="asterisk">*</span> - IFCD0210 — Desarrollo de
-            Aplicaciones con Tecnologías Web (Actualidad)
+            Aplicaciones con Tecnologías Web (2026)
           </p>
           <p className="jsdoc-line">
             <span className="asterisk">*</span> - Máster Full Stack Development
             — Nuclio Digital School (2025)
           </p>
           <p className="jsdoc-line">
-            <span className="asterisk">*</span> - PCEP1 Python (certificado
-            Entry Level)
+            <span className="asterisk">*</span> - PCEP1 Python
           </p>
           <p className="jsdoc-line jsdoc-close">*/</p>
         </div>

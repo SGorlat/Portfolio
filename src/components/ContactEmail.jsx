@@ -7,7 +7,6 @@ function ContactEmail() {
     email: "",
     message: "",
   });
-  const [status, setStatus] = useState(""); // "", "sending", "success", "error"
 
   const handleChange = (e) => {
     setFormData({
@@ -16,34 +15,15 @@ function ContactEmail() {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus("sending");
-
-    try {
-      const response = await fetch("https://formspree.io/f/xkokegqa", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setStatus("success");
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        setStatus("error");
-      }
-    } catch (error) {
-      setStatus("error", error);
-    }
+    const subject = `Contacto portfolio - ${formData.name}`;
+    const body = `Nombre: ${formData.name}\nEmail: ${formData.email}\n\nMensaje:\n${formData.message}`;
+    window.location.href = `mailto:sgorlat@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   const handleReset = () => {
     setFormData({ name: "", email: "", message: "" });
-    setStatus("");
   };
 
   return (
@@ -54,15 +34,6 @@ function ContactEmail() {
         <p>
           ¿Tienes una oportunidad o proyecto en mente? No dudes en escribirme.
         </p>
-
-        {status === "success" && (
-          <p className="status-ok">✓ Mensaje enviado. Te responderé pronto.</p>
-        )}
-        {status === "error" && (
-          <p className="status-error">
-            ✗ Hubo un problema. Inténtalo de nuevo o escríbeme por LinkedIn.
-          </p>
-        )}
 
         <form onSubmit={handleSubmit}>
           <div className="form-contact">
@@ -101,8 +72,8 @@ function ContactEmail() {
           </div>
 
           <div className="form-button">
-            <button type="submit" id="btn1" disabled={status === "sending"}>
-              {status === "sending" ? "Enviando..." : "Enviar"}
+            <button type="submit" id="btn1">
+              Enviar
             </button>
             <button type="button" id="btn2" onClick={handleReset}>
               Limpiar
