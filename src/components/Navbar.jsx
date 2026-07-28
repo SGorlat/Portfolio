@@ -91,7 +91,7 @@ function Navbar() {
           </li>
           <li>
             <a href="#contact" onClick={handleLinkClick}>
-              Contactame
+              Contacto
             </a>
           </li>
         </ul>
