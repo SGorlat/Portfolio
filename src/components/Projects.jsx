@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import "../style/Projects.css";
 
 const l2pImages = [
-  { src: "/images/PORTADA.png", alt: "Link2Play - Home" },
-  { src: "/images/lobby.png", alt: "Link2Play - Lobby" },
-  { src: "/images/eventos.png", alt: "Link2Play - Eventos" },
-  { src: "/images/perfil.png", alt: "Link2Play - Perfil" },
+  { src: "/Portfolio/images/PORTADA.png", alt: "Link2Play - Home" },
+  { src: "/Portfolio/images/lobby.png", alt: "Link2Play - Lobby" },
+  { src: "/Portfolio/images/eventos.png", alt: "Link2Play - Eventos" },
+  { src: "/Portfolio/images/perfil.png", alt: "Link2Play - Perfil" },
 ];
 
 const stack = [
