@@ -32,7 +32,7 @@ function Projects() {
     <div className="projects" id="projects">
       <h2>Proyectos</h2>
 
-      <article className="project-featured">
+      <article className="project-card">
         {/* IZQUIERDA: carrusel */}
         <div className="carousel">
           <div className="carousel-track">
