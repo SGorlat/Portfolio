@@ -8,9 +8,10 @@ function AboutMe() {
       <p className="about-intro">
         Desarrollador Full Stack con formación en el Máster de Nuclio,
         certificado profesional IFCD0210 en Desarrollo de Aplicaciones con
-        Tecnologias Web y actualmente cursando 2º DAW en Digitech y el
-        certificado IFCD0210. Mi foco es construir proyectos completos que
-        integren frontend, backend y base de datos con criterio.
+        Tecnologías Web y actualmente cursando 2º DAW en Digitech. Cuento con un
+        background de 13 años en el sector asegurador. Estoy enfocado en
+        construir proyectos completos que integren frontend, backend y base de
+        datos con código limpio, arquitectura coherente y que aporten valor.
       </p>
 
       <div className="jsdoc-blocks">
@@ -33,7 +34,13 @@ function AboutMe() {
             — Nuclio Digital School (2025)
           </p>
           <p className="jsdoc-line">
-            <span className="asterisk">*</span> - PCEP1 Python
+            <span className="asterisk">*</span> - Certificado PCEP — Certified
+            Entry-Level Python Programmer
+          </p>
+          <p className="jsdoc-line jsdoc-close">*/</p>
+          <p className="jsdoc-line">
+            <span className="asterisk">*</span> - Licenciatura en ADE
+            (Administración y Dirección de Empresas)
           </p>
           <p className="jsdoc-line jsdoc-close">*/</p>
         </div>
@@ -73,27 +80,23 @@ function AboutMe() {
             <span className="asterisk">*</span>{" "}
             <span className="tag">@objetivo</span>
           </p>
+          <p className="jsdoc-line"></p>
           <p className="jsdoc-line">
-            <span className="asterisk">*</span> Seguir creciendo como
-            desarrollador aprendiendo algo nuevo cada día.
+            <span className="asterisk">*</span> Integrarme en un equipo técnico
+            donde aportar desde el primer día y convertirme en un desarrollador
+            sólido, capaz de resolver problemas reales con autonomía.
           </p>
-          <p className="jsdoc-line">
+          {/* <p className="jsdoc-line">
             <span className="asterisk">*</span> Consolidarme como Full Stack
             Developer capaz de construir producto real y soluciones que aporten
             valor.
           </p>
           <p className="jsdoc-line">
-            <span className="asterisk">*</span> Acabar formando parte de un
-            equipo técnico donde dar lo mejor de mí.
-          </p>
-          {/* <p className="jsdoc-line">
-            <span className="asterisk">*</span> y construir producto que aporte
-            valor real,
-          </p>
-          <p className="jsdoc-line">
-            <span className="asterisk">*</span> integrándome en un equipo
-            técnico sólido.
+            <span className="asterisk">*</span> Integrarme en un equipo técnico
+            donde aportar desde el primer día y consolidarme como desarrollador
+            Full Stack capaz de construir producto real.
           </p> */}
+
           <p className="jsdoc-line jsdoc-close">*/</p>
         </div>
       </div>
