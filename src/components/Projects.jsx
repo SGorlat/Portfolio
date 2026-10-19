@@ -8,6 +8,12 @@ const l2pImages = [
   { src: "/Portfolio/images/perfil.png", alt: "Link2Play - Perfil" },
 ];
 
+const goatImages = [
+  { src: "/Portfolio/images/HOME.png", alt: "GOAT - Home" },
+  { src: "/Portfolio/images/INICIO.png", alt: "GOAT_PJ - Jugador" },
+  { src: "/Portfolio/images/TIENDA.png", alt: "GOAT_SHOP - Tienda" },
+];
+
 const stack = [
   { layer: "Frontend", tech: "React, CSS" },
   { layer: "Backend", tech: "Node.js, Express" },
@@ -17,13 +23,28 @@ const stack = [
   { layer: "APIs", tech: "RAWG API" },
 ];
 
+const stack2 = [
+  { layer: "Frontend", tech: "React, CSS" },
+  { layer: "Backend", tech: "Spring Boot (JAVA)" },
+  { layer: "Base de datos", tech: "PostgreSQL" },
+];
+
 function Projects() {
   const [current, setCurrent] = useState(0);
+  const [currentGoat, setCurrentGoat] = useState(0);
 
   // rotación automática cada 4s
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((c) => (c + 1) % l2pImages.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
+  // rotación automática cada 4s
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentGoat((c) => (c + 1) % goatImages.length);
     }, 4000);
     return () => clearInterval(timer);
   }, []);
@@ -95,6 +116,80 @@ function Projects() {
             </a>
             <a
               href="https://link2play.netlify.app/"
+              className="btn-demo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Demo en vivo
+            </a>
+          </div>
+        </div>
+      </article>
+      <article className="project-card">
+        {/* IZQUIERDA: carrusel */}
+        <div className="carousel">
+          <div className="carousel-track">
+            {goatImages.map((img, i) => (
+              <img
+                key={i}
+                src={img.src}
+                alt={img.alt}
+                className={`carousel-img ${i === currentGoat ? "active" : ""}`}
+              />
+            ))}
+          </div>
+
+          <div className="carousel-dots">
+            {goatImages.map((_, i) => (
+              <button
+                key={i}
+                className={`dot ${i === currentGoat ? "active" : ""}`}
+                onClick={() => setCurrentGoat(i)}
+                aria-label={`Imagen ${i + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* DERECHA: info */}
+        <div className="project-info">
+          <h3>GOAT-FOOTBALL CAREER SIMULATOR</h3>
+          <p className="tagline">Simulador de carrera futbolística</p>
+
+          <p>
+            ¿Siempre has querido saber qué te habría deparado una carrera como
+            futbolista? Crea tu jugador, toma decisiones y mejora hasta llegar a
+            los mejores equipos del mundo.
+          </p>
+          <p>
+            Incluye sistema de progresión por stats, eventos narrativos con
+            consecuencias en cadena, mercado de fichajes dinámico, copa nacional
+            con minijuegos y una economía realista con impuestos, agente y
+            estilo de vida.
+          </p>
+
+          <table className="stack-table">
+            <tbody>
+              {stack2.map((row) => (
+                <tr key={row.layer}>
+                  <td className="stack-layer">{row.layer}</td>
+                  <td className="stack-tech">{row.tech}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
+          <div className="project-links">
+            <a
+              href="https://github.com/SGorlat/Goat-Simulator---Frontend"
+              className="btn-github"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://thegoatfootball.netlify.app/"
               className="btn-demo"
               target="_blank"
               rel="noopener noreferrer"

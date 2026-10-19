@@ -88,7 +88,7 @@ function AboutMe() {
           <p className="jsdoc-line">
             <span className="asterisk">*</span> Construir producto completo con
             visión de negocio, aprovechando mis mas de 11 años de experiencia en
-            el sector para entender el porqué detrás del código.
+            el sector asegurador para entender el porqué detrás del código.
           </p>
           {/* <p className="jsdoc-line">
             <span className="asterisk">*</span> Integrarme en un equipo técnico
