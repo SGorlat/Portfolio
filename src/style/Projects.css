@@ -28,6 +28,8 @@
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
 .project-card:hover {
