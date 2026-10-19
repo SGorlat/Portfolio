@@ -53,23 +53,23 @@ function AboutMe() {
           </p>
           <p className="jsdoc-line">
             <span className="asterisk">*</span> - Entender el qué, el cómo y el
-            porqué antes de avanzar
+            porqué antes de avanzar.
           </p>
           <p className="jsdoc-line">
             <span className="asterisk">*</span> - Código limpio, no me conformo
-            con que "funcione y ya"
+            con que "funcione y ya".
           </p>
           <p className="jsdoc-line">
             <span className="asterisk">*</span> - Obstinado y metódico, no
-            suelto un problema hasta resolverlo
+            suelto un problema hasta resolverlo.
           </p>
           <p className="jsdoc-line">
             <span className="asterisk">*</span> - Constancia y esfuerzo por
-            encima de la inspiración
+            encima de la inspiración.
           </p>
           <p className="jsdoc-line">
             <span className="asterisk">*</span> - Cada día un poco mejor
-            desarrollador que el anterior
+            desarrollador que el anterior.
           </p>
           <p className="jsdoc-line jsdoc-close">*/</p>
         </div>
@@ -80,7 +80,6 @@ function AboutMe() {
             <span className="asterisk">*</span>{" "}
             <span className="tag">@objetivo</span>
           </p>
-          <p className="jsdoc-line"></p>
           <p className="jsdoc-line">
             <span className="asterisk">*</span> Integrarme en un equipo técnico
             donde aportar desde el primer día y convertirme en un desarrollador
