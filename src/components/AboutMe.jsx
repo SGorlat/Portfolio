@@ -85,12 +85,12 @@ function AboutMe() {
             donde aportar desde el primer día y convertirme en un desarrollador
             sólido, capaz de resolver problemas reales con autonomía.
           </p>
-          {/* <p className="jsdoc-line">
-            <span className="asterisk">*</span> Consolidarme como Full Stack
-            Developer capaz de construir producto real y soluciones que aporten
-            valor.
-          </p>
           <p className="jsdoc-line">
+            <span className="asterisk">*</span> Construir producto completo con
+            visión de negocio, aprovechando mis mas de 11 años de experiencia en
+            el sector para entender el porqué detrás del código.
+          </p>
+          {/* <p className="jsdoc-line">
             <span className="asterisk">*</span> Integrarme en un equipo técnico
             donde aportar desde el primer día y consolidarme como desarrollador
             Full Stack capaz de construir producto real.
