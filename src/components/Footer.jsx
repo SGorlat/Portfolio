@@ -1,13 +1,12 @@
-import React from "react";
 import "../style/Footer.css";
 
 function Footer() {
   return (
-    <div className="final">
+    <footer className="final">
       <p>
-        © 2026 Salvador Ortega Gorlat · Granada
-        <span className="footer-sep"> · </span>
-        <a
+        © {new Date().getFullYear()} · Salvador Ortega Gorlat
+        {/* <span className="footer-sep"> · </span> */}
+        {/* <a
           href="https://www.linkedin.com/in/sgorlat/"
           target="_blank"
           rel="noopener noreferrer"
@@ -23,9 +22,13 @@ function Footer() {
           aria-label="Perfil de GitHub de Salvador Ortega Gorlat"
         >
           GitHub
-        </a>
+        </a> */}
       </p>
-    </div>
+
+      <a href="#top" className="footer-back-top">
+        Volver arriba ↑
+      </a>
+    </footer>
   );
 }
 

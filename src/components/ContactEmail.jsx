@@ -1,85 +1,41 @@
-import React, { useState } from "react";
 import "../style/ContactEmail.css";
 
 function ContactEmail() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const subject = `Contacto portfolio - ${formData.name}`;
-    const body = `Nombre: ${formData.name}\nEmail: ${formData.email}\n\nMensaje:\n${formData.message}`;
-    window.location.href = `mailto:sgorlat@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  };
-
-  const handleReset = () => {
-    setFormData({ name: "", email: "", message: "" });
-  };
-
   return (
-    <section id="contact">
-      <h2 id="titulo-contacto">Contacto</h2>
+    <section
+      id="contact"
+      className="contact-section"
+      aria-labelledby="titulo-contacto"
+    >
+      <h2 id="titulo-contacto">¿Hablamos?</h2>
 
-      <div className="card">
-        <p>
-          ¿Tienes una oportunidad o proyecto en mente? No dudes en escribirme.
-        </p>
+      <p className="contact-description">
+        Busco un equipo donde aprender, aportar y seguir creciendo como
+        desarrollador.
+      </p>
 
-        <form onSubmit={handleSubmit}>
-          <div className="form-contact">
-            <label htmlFor="name">Nombre completo</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-          </div>
+      <div className="contact-links">
+        <a href="mailto:sgorlat@gmail.com" className="contact-email-button">
+          Escríbeme
+        </a>
 
-          <div className="form-contact">
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
+        <a
+          href="https://www.linkedin.com/in/sgorlat/"
+          className="contact-social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
 
-          <div className="form-contact">
-            <label htmlFor="message">Mensaje</label>
-            <textarea
-              name="message"
-              id="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            ></textarea>
-          </div>
-
-          <div className="form-button">
-            <button type="submit" id="btn1">
-              Enviar
-            </button>
-            <button type="button" id="btn2" onClick={handleReset}>
-              Limpiar
-            </button>
-          </div>
-        </form>
+        <a
+          href="https://github.com/SGorlat"
+          className="contact-social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
       </div>
     </section>
   );

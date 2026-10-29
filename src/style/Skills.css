@@ -1,126 +1,97 @@
+/* ===== SECCIÓN DE HABILIDADES ===== */
+
 .skills {
-  padding: 1rem 2rem 15rem 2rem;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
   color: #e5e7eb;
 }
 
+/* ===== TÍTULO ===== */
+
 .skills h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2rem;
+  margin: 0 0 28px;
+  text-align: left;
+
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
-.skills-editor {
-  max-width: 720px;
-  margin: 0 auto;
-  background: #1a1d24;
-  border-radius: 10px;
-  border: 1px solid #2a2f3a;
-  overflow: hidden;
-  font-family: "Fira Code", "Consolas", monospace;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.05),
-    0 0 0 1px rgba(127, 255, 212, 0.08),
-    0 20px 60px rgba(0, 0, 0, 0.5),
-    0 0 80px rgba(127, 255, 212, 0.04);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+/* ===== GRUPOS: FRONTEND, BACKEND Y HERRAMIENTAS ===== */
+
+.skills .skills-group {
+  margin-bottom: 26px;
 }
 
-.skills-editor:hover {
-  transform: translateY(-4px);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.07),
-    0 0 0 1px rgba(127, 255, 212, 0.15),
-    0 30px 80px rgba(0, 0, 0, 0.6),
-    0 0 100px rgba(127, 255, 212, 0.08);
+.skills .skills-group h3 {
+  margin: 0 0 12px;
+
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #bdc9da;
 }
 
-.editor-header {
-  background: linear-gradient(180deg, #1a1f2a 0%, #12151a 100%);
-  padding: 0.6rem 1rem;
+/* ===== ETIQUETAS DE TECNOLOGÍAS ===== */
+
+.skills .skills-tags {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-bottom: 1px solid #2a2f3a;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
+.skills .skills-tags span {
   display: inline-block;
+  padding: 6px 10px;
+
+  background: #192536;
+  border: 1px solid #2b394c;
+  border-radius: 5px;
+
+  color: #d1dbe8;
+  font-size: 0.75rem;
+  line-height: 1.5;
 }
 
-.dot.red {
-  background: #ff5f56;
-}
-.dot.yellow {
-  background: #ffbd2e;
-}
-.dot.green {
-  background: #27c93f;
-}
+/* ===== APRENDIZAJE ACTUAL ===== */
 
-.filename {
-  color: #9ca3af;
+.skills .skills-learning {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 6px 0 0;
+
+  color: #b8c5d8;
   font-size: 0.85rem;
-  margin-left: 0.5rem;
+  line-height: 1.7;
 }
 
-/* ===== Cuerpo del editor ===== */
-.editor-body {
-  padding: 1.2rem 1.5rem;
+.skills .skills-status-dot {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+
+  background: #60e0b5;
+  border-radius: 50%;
 }
 
-.editor-body p {
-  margin: 0;
-  white-space: nowrap;
-  padding: 0 0.3rem;
-  border-radius: 3px;
-  transition: background 0.2s;
-}
+/* ===== MÓVIL ===== */
 
-.editor-body p:hover {
-  background: rgba(127, 255, 212, 0.04);
-}
-
-.indent-1 {
-  padding-left: 1.5rem;
-}
-.indent-2 {
-  padding-left: 3rem;
-}
-
-/* ===== Coloreado estilo VSCode / One Dark ===== */
-.key {
-  color: #e06c75;
-} /* rojo-rosa para keys */
-.str {
-  color: #98c379;
-} /* verde para strings */
-.punct {
-  color: #abb2bf;
-} /* gris claro para comas/dos puntos */
-.brace {
-  color: #c678dd;
-} /* morado para llaves */
-
-/* ===== Responsive ===== */
 @media (max-width: 600px) {
-  .skills-editor {
-    font-size: 0.8rem;
+  .skills h2 {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
   }
-  .indent-1 {
-    padding-left: 1rem;
+
+  .skills .skills-group {
+    margin-bottom: 22px;
   }
-  .indent-2 {
-    padding-left: 2rem;
-  }
-  .editor-body {
-    padding: 1rem 0.8rem;
-  }
+}
+
+#skills {
+  scroll-margin-top: 80px;
 }

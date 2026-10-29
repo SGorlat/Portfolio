@@ -64,7 +64,7 @@ const codeLines = [
     colors: [
       { text: "digitech: " },
       {
-        text: '"2º Ciclo Superior Desarrollo Aplicaciones Web (DAW)"',
+        text: '"Ciclo Superior Desarrollo Aplicaciones Web (DAW)"',
         cls: "brown",
       },
       { text: "," },
@@ -202,36 +202,16 @@ const codeLines = [
 
 function Home() {
   const [visibleLines, setVisibleLines] = useState(0);
-  const [fading, setFading] = useState(false);
 
   useEffect(() => {
-    if (visibleLines < codeLines.length) {
-      const speed = 120 + Math.random() * 80;
-      const timer = setTimeout(() => {
-        setVisibleLines((v) => v + 1);
-      }, speed);
-      return () => clearTimeout(timer);
-    } else {
-      const fadeTimer = setTimeout(() => {
-        setFading(true);
-      }, 3000);
-      return () => clearTimeout(fadeTimer);
-    }
+    if (visibleLines >= codeLines.length) return;
+
+    const timer = setTimeout(() => {
+      setVisibleLines((v) => v + 1);
+    }, 250);
+
+    return () => clearTimeout(timer);
   }, [visibleLines]);
-
-  useEffect(() => {
-    if (fading) {
-      const resetTimer = setTimeout(() => {
-        setVisibleLines(0);
-        setFading(false);
-      }, 800);
-      return () => clearTimeout(resetTimer);
-    }
-  }, [fading]);
-
-  const scrollToSkills = () => {
-    document.getElementById("skills").scrollIntoView({ behavior: "smooth" }); // scrollIntoView es metodo nativo que hace scroll hasta ese id
-  };
 
   return (
     <div className="content_dev">
@@ -280,6 +260,15 @@ function Home() {
               laboral
             </p>
           </div>
+          <div className="home-actions">
+            <a href="#projects" className="home-projects-button">
+              Ver proyectos
+            </a>
+
+            <a href="#contact" className="home-contact-link">
+              Contactar
+            </a>
+          </div>
           <FloatingSkills />
         </section>
 
@@ -299,9 +288,18 @@ function Home() {
               <p>DeveloperJr.js</p>
             </div>
 
-            <div id="ide_content" className={fading ? "ide_fadeout" : ""}>
-              {codeLines.slice(0, visibleLines).map((line, i) => (
-                <p key={i} className="code_line" style={line.style}>
+            <div id="ide_content">
+              {codeLines.map((line, i) => (
+                <p
+                  key={i}
+                  className="code_line"
+                  aria-hidden={i >= visibleLines}
+                  style={{
+                    ...line.style,
+                    visibility: i < visibleLines ? "visible" : "hidden",
+                    animationName: i < visibleLines ? "lineAppear" : "none",
+                  }}
+                >
                   {line.colors.map((part, j) => (
                     <span key={j} className={part.cls || ""}>
                       {part.text}
@@ -315,11 +313,6 @@ function Home() {
               ))}
             </div>
           </div>
-
-          <button className="btn_show" onClick={scrollToSkills}>
-            <span className="btn_salva">salva</span>
-            .showSkills <span className="yell">()</span>;
-          </button>
         </section>
       </div>
     </div>

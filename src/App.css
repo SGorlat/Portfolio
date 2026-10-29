@@ -2,3 +2,32 @@
   width: 100%;
   min-height: 100vh;
 }
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(40px, 5vw, 96px);
+
+  width: min(1500px, calc(100% - 64px));
+  margin: 0 auto;
+  padding: 48px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ===== TABLET Y MÓVIL: UNA SOLA COLUMNA ===== */
+
+@media (max-width: 900px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-grid {
+    width: calc(100% - 36px);
+    padding: 32px 0;
+  }
+}

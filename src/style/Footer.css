@@ -1,40 +1,101 @@
+/* ===== PIE DE PÁGINA ===== */
+
 .final {
-  width: 100%;
-  padding: 1.5rem 2rem;
-  border-top: 1px solid rgba(0, 229, 195, 0.1);
+  width: min(1500px, calc(100% - 64px));
+  margin: 0 auto;
+  padding: 24px 0;
+
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 4rem;
+  gap: 24px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
 }
+
+/* ===== DATOS Y REDES ===== */
 
 .final p {
-  color: #8b949e;
-  font-size: 0.85rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0.3rem;
+  gap: 6px;
+
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  line-height: 1.8;
 }
 
-.final a {
-  color: aquamarine;
+.final p a {
+  color: #7fffd4;
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: color 0.2s ease;
 }
 
-.final a:hover {
-  opacity: 0.7;
+.final p a:hover {
+  color: #b2ffe5;
 }
 
-.footer-sep {
-  color: rgba(0, 229, 195, 0.3);
+.final .footer-sep {
+  color: #65778e;
 }
+
+/* ===== VOLVER ARRIBA ===== */
+
+.final .footer-back-top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  min-height: 44px;
+  padding: 9px 14px;
+  border: 1px solid #354456;
+  border-radius: 6px;
+
+  background: transparent;
+  color: #c9d4e4;
+  font-size: 0.8rem;
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.final .footer-back-top:hover {
+  color: #7fffd4;
+  border-color: #7fffd4;
+}
+
+/* ===== NAVEGACIÓN CON TECLADO ===== */
+
+.final a:focus-visible {
+  outline: 2px solid #7fffd4;
+  outline-offset: 4px;
+}
+
+/* ===== MÓVIL ===== */
 
 @media (max-width: 600px) {
+  .final {
+    width: calc(100% - 36px);
+    flex-direction: column;
+    gap: 16px;
+    padding: 22px 0;
+  }
+
   .final p {
-    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    line-height: 1.8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .final a {
+    transition: none;
   }
 }

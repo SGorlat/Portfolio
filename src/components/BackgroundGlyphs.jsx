@@ -24,9 +24,7 @@ function BackgroundGlyphs() {
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
-    const reduceMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)",
-    ).matches;
+
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
     let particles = [];
@@ -97,16 +95,12 @@ function BackgroundGlyphs() {
     resize();
     makeParticles();
 
-    if (reduceMotion) {
-      draw(0);
-    } else {
-      rafId = requestAnimationFrame(tick);
-    }
+    rafId = requestAnimationFrame(tick);
 
     function onResize() {
       resize();
       makeParticles();
-      if (reduceMotion) draw(0);
+      draw(0);
     }
     window.addEventListener("resize", onResize);
 
