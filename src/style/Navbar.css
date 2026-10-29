@@ -31,7 +31,7 @@
   font-size: clamp(3rem, 5vw, 5rem);
   line-height: 1;
 
-  background-image: url("../../public/images/Banner_Developer.png");
+  background-image: url("/images/Banner_Developer.png");
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
